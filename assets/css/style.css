@@ -2,7 +2,7 @@
 /* 0. RESET
 /* 1. VARIÁVEIS
 /* 2. ESTILOS GERAIS
-/* 3. HEADER
+/* 3. HEADER / HEADER NAV
 /* 4. MAIN
 /* 5. SOBRE
 /* 6. POTFÓLIO
@@ -14,17 +14,99 @@
 /* 0. RESET
 *********************/
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a,
+a:hover a:active {
+  color: var(--black);
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
 /*********************
 /* 1. VARIÁVES
 *********************/
+
+:root {
+  font-size: 16px;
+  --black: #272727;
+  --blue-dark: #3e464f;
+  --white-gray: #f5f5f5;
+  --white: #ffffff;
+}
 
 /*********************
 /* 2. ESTILOS GERAIS
 *********************/
 
 /*********************
-/* 3. HEADER
+/* 3. HEADER / HEADER NAV
 *********************/
+
+.header {
+  max-width: 980px;
+  margin: 20px auto 100px auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav__list__item {
+  margin: 25px;
+}
+
+.nav__list__link {
+  font-family: 'Antonio Bold';
+  font-size: 1.125rem;
+  padding: 10px;
+  border-bottom: 2px solid transparent;
+}
+
+.nav__list__link:hover {
+  text-decoration: underline;
+  text-underline-offset: 7px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    display: block;
+    margin: 0;
+  }
+
+  .header__logo__background {
+    background-color: var(--white-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }
+
+  .nav__list {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 416px) {
+  .nav__list__item {
+    height: 80px;
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+  }
+}
 
 /*********************
 /* 4. MAIN
