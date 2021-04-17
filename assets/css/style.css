@@ -1,12 +1,13 @@
 /*********************
 /* 0. RESET
 /* 1. VARIÁVEIS
-/* 2. HEADER / HEADER NAV
-/* 3. MAIN
-/* 4. SOBRE
-/* 5. POTFÓLIO
-/* 6. CONTATO
-/* 7. FOOTER
+/* 2. ESTILOS GERAIS
+/* 3. HEADER / HEADER NAV
+/* 4. MAIN
+/* 5. SOBRE
+/* 6. POTFÓLIO
+/* 7. CONTATO
+/* 8. FOOTER
 *********************/
 
 /*********************
@@ -18,6 +19,10 @@
   margin: 0;
   box-sizing: border-box;
   outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 a,
@@ -43,7 +48,27 @@ ul {
 }
 
 /*********************
-/* 2. HEADER / HEADER NAV
+/* 2. ESTILOS GERAIS
+*********************/
+.lines::before {
+  content: '';
+  width: 260px;
+  height: 5px;
+  background-color: var(--black);
+  display: block;
+  margin-bottom: 10px;
+}
+.lines::after {
+  content: '';
+  width: 260px;
+  height: 5px;
+  background-color: var(--black);
+  display: block;
+  margin-top: 10px;
+}
+
+/*********************
+/* 3. HEADER / HEADER NAV
 *********************/
 
 .header {
@@ -60,12 +85,13 @@ ul {
 }
 
 .nav__list__item {
-  margin: 25px;
+  margin: 20px;
 }
 
 .nav__list__link {
   font-family: 'Antonio Bold';
   font-size: 1.8rem;
+  letter-spacing: 3px;
   padding: 10px;
   border-bottom: 2px solid transparent;
   text-transform: uppercase;
@@ -95,7 +121,7 @@ ul {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 480px) {
   .nav__list__item {
     height: 80px;
     margin: 0;
@@ -106,7 +132,7 @@ ul {
 }
 
 /*********************
-/* 3. MAIN
+/* 4. MAIN
 *********************/
 
 .home {
@@ -123,12 +149,14 @@ ul {
   width: 473px;
   font-family: 'FiraMono';
   font-size: 4.8rem;
+  color: var(--black);
 }
 
 .home__wrapper__text {
   font-family: 'FiraCode';
   font-size: 1.8rem;
   margin: 22px 0px 33px 0px;
+  color: var(--black);
 }
 
 .home__wrapper__button {
@@ -190,7 +218,7 @@ ul {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 480px) {
   .home__wrapper__title {
     width: 285px;
     font-size: 3.2rem;
@@ -202,17 +230,33 @@ ul {
 }
 
 /*********************
-/* 4. SOBRE
+/* 5. SOBRE
+*********************/
+
+.sobre {
+  max-width: 770px;
+  margin: 0px auto 100px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sobre__title {
+  font-family: 'FiraCode';
+  font-weight: 500;
+  font-size: 3.2rem;
+  color: var(--black);
+  text-align: center;
+}
+
+/*********************
+/* 6. PORTFÓLIO
 *********************/
 
 /*********************
-/* 5. PORTFÓLIO
+/* 7. CONTATO
 *********************/
 
 /*********************
-/* 6. CONTATO
-*********************/
-
-/*********************
-/* 7. FOOTER
+/* 8. FOOTER
 *********************/

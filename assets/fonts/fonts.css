@@ -4,6 +4,12 @@
 }
 
 @font-face {
+  font-family: 'FiraMono';
+  src: url(./FiraMono-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
   font-family: 'FiraCode';
   src: url(./FiraCode-Regular.ttf);
   font-weight: 400;
@@ -11,12 +17,12 @@
 
 @font-face {
   font-family: 'FiraCode';
-  src: url(./FiraCode-Bold.ttf);
-  font-weight: bold;
+  src: url(./FiraCode-Medium.ttf);
+  font-weight: 500;
 }
 
 @font-face {
-  font-family: 'FiraMono';
-  src: url(./FiraMono-Bold.ttf);
+  font-family: 'FiraCode';
+  src: url(./FiraCode-Bold.ttf);
   font-weight: bold;
 }
