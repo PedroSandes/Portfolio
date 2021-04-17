@@ -3,6 +3,9 @@
 ## Descrição
 Essa é uma aplicação exercício do curso do [estartando devs](https://estartandodevs.com.br/), o objetivo dela é mostra conhecimentos em HTML, CSS, GIT e Github.
 
+## Design
+Para poder visualizar o Design entre [neste link](https://www.figma.com/file/1tLgMViMAajv0CEPXZbyjl/Portf%C3%B3lio?node-id=0%3A1), ele vai te levar para um figma.
+
 ## Fonts utilizadas
 
 - [Antonio](https://fonts.google.com/specimen/Antonio?query=antonio)
