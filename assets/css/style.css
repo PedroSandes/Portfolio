@@ -120,6 +120,7 @@ ul {
 }
 
 .home__wrapper__title {
+  width: 473px;
   font-family: 'FiraMono';
   font-size: 4.8rem;
 }
@@ -171,6 +172,7 @@ ul {
   }
 
   .home__wrapper__title {
+    width: 432px;
     margin-top: 118px;
   }
 
@@ -190,6 +192,7 @@ ul {
 
 @media (max-width: 450px) {
   .home__wrapper__title {
+    width: 285px;
     font-size: 3.2rem;
   }
 
