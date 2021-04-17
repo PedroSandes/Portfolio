@@ -64,7 +64,7 @@ ul {
   height: 5px;
   background-color: var(--black);
   display: block;
-  margin-top: 10px;
+  margin: 10px 0px 50px 0px;
 }
 
 /*********************
@@ -241,18 +241,74 @@ ul {
   align-items: center;
 }
 
+.sobre__description {
+  margin: 0px 30px;
+}
+
 .sobre__title {
   font-family: 'FiraCode';
   font-weight: 500;
-  font-size: 3.2rem;
+  font-size: 3.6rem;
   color: var(--black);
   text-align: center;
+  text-transform: uppercase;
 }
 
+.sobre__subtitle {
+  font-family: 'FiraCode';
+  font-weight: bold;
+  font-size: 3.2rem;
+  margin-bottom: 22px;
+}
+
+.sobre__text {
+  font-family: 'FiraCode';
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 24px;
+  margin-bottom: 18px;
+}
+
+@media (max-width: 456px) {
+  .sobre__subtitle {
+    font-size: 2.6rem;
+  }
+}
 /*********************
 /* 6. PORTFÓLIO
 *********************/
+.portfolio {
+  max-width: 980px;
+  margin: 0px auto 50px auto;
+}
 
+.portfolio__title__center {
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio__title {
+  font-family: 'FiraCode';
+  font-weight: 500;
+  font-size: 3.6rem;
+  color: var(--black);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.portfolio__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.portfolio__card {
+  width: 250px;
+  height: 250px;
+  background-color: var(--blue-dark);
+  margin-bottom: 50px;
+  border-radius: 5px;
+}
 /*********************
 /* 7. CONTATO
 *********************/
