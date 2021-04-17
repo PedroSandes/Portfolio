@@ -122,6 +122,11 @@ ul {
 }
 
 @media (max-width: 492px) {
+  .nav__list__link {
+    font-size: 1.6rem;
+    padding: 5px;
+  }
+
   .nav__list__item {
     height: 80px;
     margin: 0;
@@ -301,6 +306,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  margin: 0px 30px;
 }
 
 .portfolio__card {
