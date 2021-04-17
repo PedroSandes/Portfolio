@@ -121,7 +121,7 @@ ul {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 492px) {
   .nav__list__item {
     height: 80px;
     margin: 0;
@@ -218,7 +218,7 @@ ul {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 492px) {
   .home__wrapper__title {
     width: 285px;
     font-size: 3.2rem;
