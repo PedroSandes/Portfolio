@@ -2,7 +2,7 @@
 /* 0. RESET
 /* 1. VARIÁVEIS
 /* 2. ESTILOS GERAIS
-/* 3. HEADER / HEADER NAV
+/* 3. HEADER / NAV
 /* 4. MAIN
 /* 5. SOBRE
 /* 6. PORTFÓLIO
@@ -36,7 +36,7 @@ ul {
 }
 
 /*********************
-/* 1. VARIÁVES
+/* 1. VARIÁVEIS
 *********************/
 
 :root {
@@ -68,7 +68,7 @@ ul {
 }
 
 /*********************
-/* 3. HEADER / HEADER NAV
+/* 3. HEADER / NAV
 *********************/
 
 .header {
