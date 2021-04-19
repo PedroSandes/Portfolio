@@ -319,6 +319,7 @@ ul {
   background-color: var(--blue-dark);
   margin-bottom: 50px;
   border-radius: 5px;
+  cursor: pointer;
 }
 /*********************
 /* 7. CONTATO
