@@ -118,12 +118,14 @@ ul {
 
 .header {
   max-width: 980px;
-  margin: 20px auto 100px auto;
+  margin: 20px auto;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
+/* MENU */
 
 .menu__list {
   display: flex;
@@ -193,7 +195,7 @@ ul {
 
 .home {
   max-width: 980px;
-  margin: 0px auto 100px auto;
+  margin: 100px auto;
 
   display: flex;
   align-items: center;
@@ -232,7 +234,8 @@ ul {
   .home {
     flex-direction: column-reverse;
     justify-content: center;
-    box-sizing: border-box;
+    margin: 0;
+    margin-bottom: 20px;
   }
 
   .card-home {
@@ -272,7 +275,7 @@ ul {
 
 .sobre {
   max-width: 770px;
-  margin: 0px auto 100px auto;
+  margin: 100px auto;
 
   display: flex;
   flex-direction: column;
@@ -308,17 +311,13 @@ ul {
     line-height: 39.78px;
     margin-bottom: 25px;
   }
-
-  .description__text {
-    padding-bottom: 50px;
-  }
 }
 /*********************
 /* 6. PORTFÓLIO
 *********************/
 .portfolio {
   max-width: 980px;
-  margin: 0px auto 50px auto;
+  margin: 50px auto;
 }
 
 .cards-c {
