@@ -20,9 +20,13 @@
   box-sizing: border-box;
   outline: none;
 }
-html,
-body {
+html {
   scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
 }
 
 a,
@@ -67,6 +71,16 @@ ul {
   margin: 10px 0px 50px 0px;
 }
 
+/* SECTION TITLE  */
+.section__title {
+  font-family: 'FiraCode';
+  font-weight: 500;
+  font-size: 3.6rem;
+  color: var(--black);
+  text-align: center;
+  text-transform: uppercase;
+}
+
 /*********************
 /* 3. HEADER / NAV
 *********************/
@@ -80,15 +94,15 @@ ul {
   align-items: center;
 }
 
-.nav__list {
+.menu__list {
   display: flex;
 }
 
-.nav__list__item {
+.menu__item {
   margin: 20px;
 }
 
-.nav__list__link {
+.menu__link {
   font-family: 'Antonio Bold';
   font-size: 1.8rem;
   letter-spacing: 3px;
@@ -97,7 +111,7 @@ ul {
   text-transform: uppercase;
 }
 
-.nav__list__link:hover {
+.menu__link:hover {
   text-decoration: underline;
   text-underline-offset: 7px;
 }
@@ -108,7 +122,7 @@ ul {
     margin: 0;
   }
 
-  .header__logo--background {
+  .logo--background {
     background-color: var(--white-gray);
     display: flex;
     justify-content: center;
@@ -116,18 +130,18 @@ ul {
     height: 100px;
   }
 
-  .nav__list {
+  .menu__list {
     justify-content: center;
   }
 }
 
 @media (max-width: 492px) {
-  .nav__list__link {
+  .menu__link {
     font-size: 1.6rem;
     padding: 5px;
   }
 
-  .nav__list__item {
+  .menu__item {
     height: 80px;
     margin: 0;
 
@@ -136,7 +150,7 @@ ul {
   }
 
   @media (max-width: 230px) {
-    .nav__list__link {
+    .menu__link {
       font-size: 1.4rem;
     }
   }
@@ -155,21 +169,21 @@ ul {
   justify-content: space-between;
 }
 
-.home__wrapper__title {
+.home__title {
   width: 473px;
   font-family: 'FiraMono';
   font-size: 4.8rem;
   color: var(--black);
 }
 
-.home__wrapper__text {
+.home__text {
   font-family: 'FiraCode';
   font-size: 1.8rem;
   margin: 22px 0px 33px 0px;
   color: var(--black);
 }
 
-.home__wrapper__button {
+.home__button {
   font-family: 'FiraCode';
   font-size: 2.2rem;
   color: var(--white);
@@ -182,18 +196,18 @@ ul {
   border: 2px solid transparent;
 }
 
-.home__wrapper__button:hover {
+.home__button:hover {
   background-color: transparent;
   color: var(--blue-dark);
   border: 2px solid var(--blue-dark);
 }
 
-.home__wrapper__button:active {
+.home__button:active {
   background-color: var(--black);
   color: var(--white);
 }
 
-.home__img__tag {
+.home__img {
   width: 100%;
   height: auto;
   border-radius: 5px;
@@ -208,12 +222,12 @@ ul {
     justify-content: center;
   }
 
-  .home__wrapper__title {
+  .home__title {
     width: 432px;
     margin-top: 118px;
   }
 
-  .home__wrapper__button {
+  .home__button {
     margin-bottom: 118px;
   }
 
@@ -228,12 +242,12 @@ ul {
 }
 
 @media (max-width: 492px) {
-  .home__wrapper__title {
+  .home__title {
     width: 285px;
     font-size: 3.2rem;
   }
 
-  .home__wrapper__text {
+  .home__text {
     margin: 35px 0px;
   }
 }
@@ -253,15 +267,6 @@ ul {
 
 .sobre__description {
   margin: 0px 30px;
-}
-
-.sobre__title {
-  font-family: 'FiraCode';
-  font-weight: 500;
-  font-size: 3.6rem;
-  color: var(--black);
-  text-align: center;
-  text-transform: uppercase;
 }
 
 .sobre__subtitle {
@@ -302,28 +307,19 @@ ul {
   margin: 0px auto 50px auto;
 }
 
-.portfolio__title__center {
+.portfolio__center {
   display: flex;
   justify-content: center;
 }
 
-.portfolio__title {
-  font-family: 'FiraCode';
-  font-weight: 500;
-  font-size: 3.6rem;
-  color: var(--black);
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.portfolio__container {
+.container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin: 0px 30px;
 }
 
-.portfolio__card {
+.card {
   width: 250px;
   height: 250px;
   background-color: var(--blue-dark);
@@ -339,28 +335,20 @@ ul {
   margin: 0px auto 100px auto;
 }
 
-.contato__title__center {
+.contato__center {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
 
-.contato__title {
-  font-family: 'FiraCode';
-  font-weight: 500;
-  font-size: 3.6rem;
-  text-align: center;
-  color: var(--black);
-}
-
-.contato__redes {
+.redes {
   display: flex;
   justify-content: space-evenly;
 }
 
 @media (max-width: 512px) {
-  .contato__redes {
+  .redes {
     height: 500px;
     flex-direction: column;
     align-items: center;
@@ -384,20 +372,21 @@ ul {
   align-items: center;
 }
 
-.footer__logo,
-.footer__direitos,
-.footer__contato {
+.logo,
+.direitos,
+.contato {
   flex: 1;
 }
 
-.footer__direitos__text {
+.direitos__text {
   font-family: 'FiraCode';
   font-size: 1.8rem;
 }
 
-.footer__contato {
+.contato--footer {
   font-family: 'FiraCode';
   font-size: 1.8rem;
+  margin: 0;
 }
 
 @media (max-width: 919px) {
@@ -407,9 +396,9 @@ ul {
     justify-content: space-evenly;
   }
 
-  .footer__logo,
-  .footer__direitos,
-  .footer__contato {
+  .logo,
+  .direitos,
+  .contato {
     flex: initial;
   }
 }
