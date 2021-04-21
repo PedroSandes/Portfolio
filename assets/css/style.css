@@ -72,13 +72,43 @@ ul {
 }
 
 /* SECTION TITLE  */
-.section__title {
+.title-principal {
   font-family: 'FiraCode';
   font-weight: 500;
   font-size: 3.6rem;
   color: var(--black);
   text-align: center;
   text-transform: uppercase;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+/* BUTTON */
+.btn {
+  font-family: 'FiraCode';
+  font-size: 2.2rem;
+  color: var(--white);
+  text-transform: uppercase;
+
+  background-color: var(--blue-dark);
+  border-radius: 5px;
+  padding: 13px 27px;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: var(--blue-dark);
+  border: 2px solid var(--blue-dark);
+}
+
+.btn:active {
+  background-color: var(--black);
+  color: var(--white);
 }
 
 /*********************
@@ -122,7 +152,7 @@ ul {
     margin: 0;
   }
 
-  .logo--background {
+  .logo--bg {
     background-color: var(--white-gray);
     display: flex;
     justify-content: center;
@@ -169,86 +199,70 @@ ul {
   justify-content: space-between;
 }
 
-.home__title {
+.card-home__title {
   width: 473px;
   font-family: 'FiraMono';
   font-size: 4.8rem;
   color: var(--black);
 }
 
-.home__text {
+.card-home__text {
   font-family: 'FiraCode';
   font-size: 1.8rem;
   margin: 22px 0px 33px 0px;
   color: var(--black);
 }
 
-.home__button {
-  font-family: 'FiraCode';
-  font-size: 2.2rem;
-  color: var(--white);
-  text-transform: uppercase;
-
-  background-color: var(--blue-dark);
-  border-radius: 5px;
-  padding: 13px 27px;
-  cursor: pointer;
-  border: 2px solid transparent;
-}
-
-.home__button:hover {
-  background-color: transparent;
-  color: var(--blue-dark);
-  border: 2px solid var(--blue-dark);
-}
-
-.home__button:active {
-  background-color: var(--black);
-  color: var(--white);
-}
-
-.home__img {
-  width: 100%;
+.home-img {
+  max-width: 500px;
   height: auto;
+}
+
+.home-img__width {
+  width: 100%;
   border-radius: 5px;
 }
 
 @media (max-width: 919px) {
-  .home__bg {
+  .home-bg {
     background-color: var(--white-gray);
   }
 
   .home {
+    flex-direction: column-reverse;
     justify-content: center;
+    box-sizing: border-box;
   }
 
-  .home__title {
-    width: 432px;
-    margin-top: 118px;
-  }
-
-  .home__button {
-    margin-bottom: 118px;
-  }
-
-  .home__wrapper {
+  .card-home {
     justify-content: center;
     text-align: center;
+    margin-bottom: 60px;
   }
 
-  .home__img {
-    display: none;
+  .card-home__title {
+    width: 432px;
+  }
+
+  .home-img {
+    margin: 60px 0;
+    width: 350px;
   }
 }
 
 @media (max-width: 492px) {
-  .home__title {
+  .card-home__title {
     width: 285px;
     font-size: 3.2rem;
   }
 
-  .home__text {
+  .card-home__text {
     margin: 35px 0px;
+  }
+
+  .home-img {
+    padding: 60px 0;
+    width: 250px;
   }
 }
 
@@ -265,11 +279,11 @@ ul {
   align-items: center;
 }
 
-.sobre__description {
+.description {
   margin: 0px 30px;
 }
 
-.sobre__subtitle {
+.description__title {
   font-family: 'FiraCode';
   font-weight: bold;
   font-size: 3.2rem;
@@ -277,7 +291,7 @@ ul {
   margin-bottom: 22px;
 }
 
-.sobre__text {
+.description__text {
   font-family: 'FiraCode';
   font-weight: 400;
   font-size: 1.8rem;
@@ -289,14 +303,14 @@ ul {
   .sobre {
     margin-bottom: 50px;
   }
-  .sobre__subtitle {
+  .description__title {
     font-size: 2.6rem;
     line-height: 39.78px;
     margin-bottom: 25px;
   }
 
-  .sobre__text {
-    margin-bottom: 50px;
+  .description__text {
+    padding-bottom: 50px;
   }
 }
 /*********************
@@ -307,19 +321,14 @@ ul {
   margin: 0px auto 50px auto;
 }
 
-.portfolio__center {
-  display: flex;
-  justify-content: center;
-}
-
-.container {
+.cards-c {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin: 0px 30px;
 }
 
-.card {
+.cards-c__item {
   width: 250px;
   height: 250px;
   background-color: var(--blue-dark);
@@ -333,13 +342,6 @@ ul {
 .contato {
   max-width: 700px;
   margin: 0px auto 100px auto;
-}
-
-.contato__center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
 }
 
 .redes {
